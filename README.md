@@ -8,24 +8,22 @@ ESLint rules for Loonfy projects
 
 ```
 module.exports = {
-	"env": {
-		"commonjs": true,
-		"es6": true,
-		"node": true
-	},
-	"extends": [
-		"eslint:recommended",
-		"eslint-config-loonfy"
+	parser: '@typescript-eslint/parser',
+	plugins: [
+		'@typescript-eslint/eslint-plugin'
 	],
-	"globals": {
-		"Atomics": "readonly",
-		"SharedArrayBuffer": "readonly"
+	extends: [
+		'plugin:@typescript-eslint/recommended',
+		'eslint-config-loonfy'
+	],
+	root: true,
+	env: {
+		node: true,
+		jest: true,
+		browser: true
 	},
-	"parserOptions": {
-		"ecmaVersion": 2018
-	},
-	"rules": {
-
+	rules: {
+		"@typescript-eslint/explicit-module-boundary-types": "off"
 	}
 };
 
