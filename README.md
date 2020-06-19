@@ -23,7 +23,7 @@ module.exports = {
 		browser: true
 	},
 	rules: {
-		"@typescript-eslint/explicit-module-boundary-types": "off"
+		
 	}
 };
 

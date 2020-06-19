@@ -1,5 +1,6 @@
 module.exports = {
 	rules: {
+		//eslint base
 		"accessor-pairs": "error",
 		"array-bracket-newline": "off",
 		"array-callback-return": "error",
@@ -274,6 +275,30 @@ module.exports = {
 		"wrap-regex": "error",
 		"yield-star-spacing": "error",
 		yoda: ["error", "never"],
-		"no-case-declarations": "off"
+		"no-case-declarations": "off",
+
+		//typescript
+		"@typescript-eslint/explicit-function-return-type": "off",
+		"@typescript-eslint/no-inferrable-types": "off",
+		"@typescript-eslint/no-use-before-define": "off",
+		"@typescript-eslint/camelcase": [
+			"error",
+			{
+				properties: "never"
+			}
+		],
+		"@typescript-eslint/no-explicit-any": "off",
+		"@typescript-eslint/explicit-member-accessibility": [
+			'error',
+			{
+				overrides: {
+					accessors : 'off',
+					constructors: 'off',
+					methods: 'explicit',
+					properties: 'explicit',
+					parameterProperties: 'explicit'
+				}
+			}
+		],
 	}
 };
