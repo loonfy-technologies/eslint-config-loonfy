@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-loonfy",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.1.0",
+  "description": "ESLint configuration for Loonfy projects",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,12 +15,12 @@
     "loonfy"
   ],
   "author": "Loonfy Technologies",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/loonfy-technologies/eslint-config-loonfy/issues"
   },
   "homepage": "https://github.com/loonfy-technologies/eslint-config-loonfy#readme",
   "peerDependencies": {
-    "eslint": ">= 6"
+    "eslint": ">= 7"
   }
 }
